@@ -37,4 +37,11 @@ public class Base {
         return driver;
 	}	
 	
+	public static WebDriver openBrowser() {
+		System.setProperty("webdriver.opera.driver","D:\\Software Testing\\Automation notes\\Selenium\\operadriver_win64\\operadriver_win64\\operadriver.exe");
+
+		WebDriver driver = new OperaDriver();
+        return driver;
+	}	
+	
 }
