@@ -16,11 +16,11 @@ public class Base {
 		   return driver;
 	}
 	
-	public static WebDriver openFirefoxBrowser() {
-		System.setProperty("webdriver.gecko.driver", "D:\\Software Testing\\Automation notes\\Selenium\\geckodriver-v0.31.0-win64\\geckodriver.exe");
+// 	public static WebDriver openFirefoxBrowser() {
+// 		System.setProperty("webdriver.gecko.driver", "D:\\Software Testing\\Automation notes\\Selenium\\geckodriver-v0.31.0-win64\\geckodriver.exe");
  		
-	   WebDriver  driver = new FirefoxDriver();
-	     return driver;
+// 	   WebDriver  driver = new FirefoxDriver();
+// 	     return driver;
 	}
 	
 	public static WebDriver openMicrosoftEdgexBrowser() {
