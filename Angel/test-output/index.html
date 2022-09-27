@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">10 methods, 3 failed,  2 skipped,  5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,10 +104,39 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testNGClass1.BuyShare" class="method navigator-link" hash-for-method="openOrder">openOrder</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testNGClass1.BuyShare1" class="method navigator-link" hash-for-method="buyShare">buyShare</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGClass1.BuyShare" class="method navigator-link" hash-for-method="open">open</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGClass1.BuyShare" class="method navigator-link" hash-for-method="open">open</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGClass1.BuyShare1" class="method navigator-link" hash-for-method="sellShare">sellShare</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGClass1.BuyShare1" class="method navigator-link" hash-for-method="sellShare">sellShare</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -128,7 +157,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testNGClass1.BuyShare1" class="method navigator-link" hash-for-method="sellShare">sellShare</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testNGClass1.BuyShare" class="method navigator-link" hash-for-method="openMarket">openMarket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGClass1.BuyShare" class="method navigator-link" hash-for-method="openOrder">openOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGClass1.BuyShare" class="method navigator-link" hash-for-method="openOrder">openOrder</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -146,17 +185,69 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">testNGClass1.BuyShare1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyShare">
+                  </a> <!-- buyShare -->
+                  <span class="method-name">buyShare</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/trade/trading/watchlist&quot; class=&quot;dropdown-toggle&quot; id=&quot;mnMarkets&quot;&gt;...&lt;/a&gt; is not clickable at point (446, 52). Other element would receive the click: &lt;div class=&quot;modal modal-theme modal-centered fade checkOut-widget-Popup plat in&quot; style=&quot;display: block;&quot; id=&quot;Authorizepopup&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=105.0.5195.127)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-3ATMJAD&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59376}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d53a75803b5a09a1bfcf4bf50893c5d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at AngelOne.HeaderPage.openMarket(HeaderPage.java:66)
+	at testNGClass1.BuyShare1.buyShare(BuyShare1.java:116)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">testNGClass1.BuyShare</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="openOrder">
-                  </a> <!-- openOrder -->
-                  <span class="method-name">openOrder</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	expected [https://trade.angelbroking.co/trade/trading/orderbook] but found [https://trade.angelbroking.com/trade/trading/orderbook]
-	at testNGClass1.BuyShare.openOrder(BuyShare.java:108)
+                  <a name="open">
+                  </a> <!-- open -->
+                  <span class="method-name">open</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at testNGClass1.BuyShare.open(BuyShare.java:120)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="open">
+                  </a> <!-- open -->
+                  <span class="method-name">open</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at testNGClass1.BuyShare.open(BuyShare.java:120)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
@@ -166,6 +257,81 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testNGClass1.BuyShare1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sellShare">
+                  </a> <!-- sellShare -->
+                  <span class="method-name">sellShare</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;CONFIRM&apos;]&quot;}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-3ATMJAD&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59376}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d53a75803b5a09a1bfcf4bf50893c5d
+*** Element info: {Using=xpath, value=//button[text()=&apos;CONFIRM&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at AngelOne.ConfirmOrder.clickOnConfirmButton(ConfirmOrder.java:22)
+	at testNGClass1.BuyShare1.confirmShareOrder(BuyShare1.java:179)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sellShare">
+                  </a> <!-- sellShare -->
+                  <span class="method-name">sellShare</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=105.0.5195.127)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-3ATMJAD&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 86e6d02c947d040ba5133f1936a948a0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at AngelOne.ConfirmOrder.clickOnConfirmButton(ConfirmOrder.java:22)
+	at testNGClass1.BuyShare1.confirmShareOrder(BuyShare1.java:179)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -177,13 +343,6 @@
                   <a name="buyShare">
                   </a> <!-- buyShare -->
                   <span class="method-name">buyShare</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="sellShare">
-                  </a> <!-- sellShare -->
-                  <span class="method-name">sellShare</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -199,6 +358,27 @@
                   <a name="openMarket">
                   </a> <!-- openMarket -->
                   <span class="method-name">openMarket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openMarket">
+                  </a> <!-- openMarket -->
+                  <span class="method-name">openMarket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openOrder">
+                  </a> <!-- openOrder -->
+                  <span class="method-name">openOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openOrder">
+                  </a> <!-- openOrder -->
+                  <span class="method-name">openOrder</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -220,6 +400,13 @@
       &lt;class name=&quot;testNGClass1.BuyShare1&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;OperaTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testNGClass1.BuyShare&quot;/&gt;
+      &lt;class name=&quot;testNGClass1.BuyShare1&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- OperaTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -232,6 +419,9 @@
             <ul>
               <li>
                 <span class="test-name">ChromeTest (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">OperaTest (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -257,28 +447,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'buyShare')
 data.setCell(0, 2, 'testNGClass1.BuyShare1')
-data.setCell(0, 3, 9609);
+data.setCell(0, 3, 8048);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'sellShare')
-data.setCell(1, 2, 'testNGClass1.BuyShare1')
-data.setCell(1, 3, 5517);
+data.setCell(1, 1, 'openMarket')
+data.setCell(1, 2, 'testNGClass1.BuyShare')
+data.setCell(1, 3, 3669);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'openMarket')
+data.setCell(2, 1, 'open')
 data.setCell(2, 2, 'testNGClass1.BuyShare')
-data.setCell(2, 3, 2025);
+data.setCell(2, 3, 1900);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'openOrder')
+data.setCell(3, 1, 'openMarket')
 data.setCell(3, 2, 'testNGClass1.BuyShare')
-data.setCell(3, 3, 646);
+data.setCell(3, 3, 1801);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'buyShare')
+data.setCell(4, 2, 'testNGClass1.BuyShare1')
+data.setCell(4, 3, 1192);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'open')
+data.setCell(5, 2, 'testNGClass1.BuyShare')
+data.setCell(5, 3, 856);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'openOrder')
+data.setCell(6, 2, 'testNGClass1.BuyShare')
+data.setCell(6, 3, 855);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'openOrder')
+data.setCell(7, 2, 'testNGClass1.BuyShare')
+data.setCell(7, 3, 808);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'sellShare')
+data.setCell(8, 2, 'testNGClass1.BuyShare1')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'sellShare')
+data.setCell(9, 2, 'testNGClass1.BuyShare1')
+data.setCell(9, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -314,99 +528,265 @@ return data;
               <div class="chronological-class-name">testNGClass1.BuyShare1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">launchBrowser(Chrome)</span>
-                <span class="method-start">2366 ms</span>
+                <span class="method-start">1959 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">createPOMObject</span>
-                <span class="method-start">3509 ms</span>
-              </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClass1.BuyShare</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">lounchBrowser</span>
-                <span class="method-start">3509 ms</span>
+                <span class="method-start">3093 ms</span>
               </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClass1.BuyShare1</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createPOMObject</span>
+                <span class="method-start">3093 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClass1.BuyShare</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">loginAngelOne</span>
-                <span class="method-start">3562 ms</span>
+                <span class="method-start">3148 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClass1.BuyShare1</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">loginAngelOne</span>
-                <span class="method-start">3566 ms</span>
+                <span class="method-start">3152 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">buyShare</span>
-                <span class="method-start">20320 ms</span>
+                <span class="method-start">19428 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClass1.BuyShare</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">openMarket</span>
-                <span class="method-start">20407 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">captureScreenShot([TestResult name=openMarket status=SUCCESS method=BuyShare.openMarket()[pri:0, instance:testNGClass1...)</span>
-                <span class="method-start">22436 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">loginAngelOne</span>
-                <span class="method-start">22439 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">openOrder</span>
-                <span class="method-start">27932 ms</span>
+                <span class="method-name">open</span>
+                <span class="method-start">20235 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">captureScreenShot([TestResult name=openOrder status=FAILURE method=BuyShare.openOrder()[pri:0, instance:testNGClass1.B...)</span>
-                <span class="method-start">28581 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">cleanPOMObject</span>
-                <span class="method-start">28912 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClass1.BuyShare1</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">confirmShareOrder([TestResult name=buyShare status=SUCCESS method=BuyShare1.buyShare()[pri:0, instance:testNGClass1.Bu...)</span>
-                <span class="method-start">29931 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">confirmShareOrder([TestResult name=buyShare status=FAILURE method=BuyShare1.buyShare()[pri:0, instance:testNGClass1.Bu...)</span>
+                <span class="method-start">20634 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClass1.BuyShare</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShot([TestResult name=open status=FAILURE method=BuyShare.open()[pri:0, instance:testNGClass1.BuyShare@4a...)</span>
+                <span class="method-start">21093 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loginAngelOne</span>
-                <span class="method-start">41832 ms</span>
+                <span class="method-start">21310 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">sellShare</span>
-                <span class="method-start">43460 ms</span>
+                <span class="method-name">openMarket</span>
+                <span class="method-start">22892 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">confirmShareOrder([TestResult name=sellShare status=SUCCESS method=BuyShare1.sellShare()[pri:0, instance:testNGClass1....)</span>
-                <span class="method-start">48980 ms</span>
+                <span class="method-name">captureScreenShot([TestResult name=openMarket status=SUCCESS method=BuyShare.openMarket()[pri:0, instance:testNGClass1...)</span>
+                <span class="method-start">24694 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAngelOne</span>
+                <span class="method-start">24696 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">openOrder</span>
+                <span class="method-start">26152 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShot([TestResult name=openOrder status=SUCCESS method=BuyShare.openOrder()[pri:0, instance:testNGClass1.B...)</span>
+                <span class="method-start">27008 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">cleanPOMObject</span>
-                <span class="method-start">62442 ms</span>
+                <span class="method-start">27009 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClass1.BuyShare1</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAngelOne</span>
+                <span class="method-start">38055 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sellShare</span>
+                <span class="method-start">38057 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">confirmShareOrder</span>
+                <span class="method-start">38060 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">cleanPOMObject</span>
+                <span class="method-start">38062 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClass1.BuyShare</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">62446 ms</span>
+                <span class="method-start">38064 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGClass1.BuyShare1</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">69989 ms</span>
+                <span class="method-start">39776 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClass1.BuyShare</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchBrowser(Chrome)</span>
+                <span class="method-start">40354 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClass1.BuyShare1</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchBrowser(Chrome)</span>
+                <span class="method-start">41969 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClass1.BuyShare</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">lounchBrowser</span>
+                <span class="method-start">43142 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClass1.BuyShare1</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createPOMObject</span>
+                <span class="method-start">43142 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClass1.BuyShare</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAngelOne</span>
+                <span class="method-start">43146 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClass1.BuyShare1</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAngelOne</span>
+                <span class="method-start">43154 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClass1.BuyShare</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">open</span>
+                <span class="method-start">56153 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClass1.BuyShare1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">buyShare</span>
+                <span class="method-start">57190 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClass1.BuyShare</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShot([TestResult name=open status=FAILURE method=BuyShare.open()[pri:0, instance:testNGClass1.BuyShare@74...)</span>
+                <span class="method-start">58055 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAngelOne</span>
+                <span class="method-start">58382 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">openMarket</span>
+                <span class="method-start">61151 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShot([TestResult name=openMarket status=SUCCESS method=BuyShare.openMarket()[pri:0, instance:testNGClass1...)</span>
+                <span class="method-start">64822 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAngelOne</span>
+                <span class="method-start">64823 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClass1.BuyShare1</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">confirmShareOrder([TestResult name=buyShare status=SUCCESS method=BuyShare1.buyShare()[pri:0, instance:testNGClass1.Bu...)</span>
+                <span class="method-start">65239 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClass1.BuyShare</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openOrder</span>
+                <span class="method-start">67368 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShot([TestResult name=openOrder status=SUCCESS method=BuyShare.openOrder()[pri:0, instance:testNGClass1.B...)</span>
+                <span class="method-start">68178 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">cleanPOMObject</span>
+                <span class="method-start">68178 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClass1.BuyShare1</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAngelOne</span>
+                <span class="method-start">82510 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sellShare</span>
+                <span class="method-start">82516 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">confirmShareOrder</span>
+                <span class="method-start">82520 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">cleanPOMObject</span>
+                <span class="method-start">82521 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClass1.BuyShare</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">82525 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGClass1.BuyShare1</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">83009 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

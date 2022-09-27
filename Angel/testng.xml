@@ -8,4 +8,13 @@
       <class name="testNGClass1.BuyShare1"/>
     </classes>
   </test> <!-- Test -->
+  
+    <test name="OperaTest">
+  <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testNGClass1.BuyShare"/>
+      <class name="testNGClass1.BuyShare1"/>
+    </classes>
+  </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

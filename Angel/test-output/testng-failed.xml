@@ -4,9 +4,21 @@
   <test thread-count="5" parallel="classes" name="ChromeTest(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
+      <class name="testNGClass1.BuyShare1">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="loginAngelOne"/>
+          <include name="buyShare"/>
+          <include name="closeBrowser"/>
+          <include name="confirmShareOrder"/>
+          <include name="sellShare"/>
+          <include name="createPOMObject"/>
+          <include name="cleanPOMObject"/>
+        </methods>
+      </class> <!-- testNGClass1.BuyShare1 -->
       <class name="testNGClass1.BuyShare">
         <methods>
-          <include name="openOrder"/>
+          <include name="open"/>
           <include name="loginAngelOne"/>
           <include name="cleanPOMObject"/>
           <include name="lounchBrowser"/>
@@ -17,4 +29,31 @@
       </class> <!-- testNGClass1.BuyShare -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" parallel="classes" name="OperaTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testNGClass1.BuyShare1">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="loginAngelOne"/>
+          <include name="closeBrowser"/>
+          <include name="confirmShareOrder"/>
+          <include name="sellShare"/>
+          <include name="createPOMObject"/>
+          <include name="cleanPOMObject"/>
+        </methods>
+      </class> <!-- testNGClass1.BuyShare1 -->
+      <class name="testNGClass1.BuyShare">
+        <methods>
+          <include name="open"/>
+          <include name="loginAngelOne"/>
+          <include name="cleanPOMObject"/>
+          <include name="lounchBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="captureScreenShot"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testNGClass1.BuyShare -->
+    </classes>
+  </test> <!-- OperaTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
