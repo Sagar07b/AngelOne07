@@ -6,6 +6,7 @@
       <class name="testNGClass1.BuyShare">
         <methods>
           <include name="openOrder"/>
+          <include name="open"/>
           <include name="openMarket"/>
           <include name="loginAngelOne"/>
           <include name="cleanPOMObject"/>

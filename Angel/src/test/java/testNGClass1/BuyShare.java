@@ -1,5 +1,7 @@
 package testNGClass1;
 
+import static org.testng.Assert.fail;
+
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -97,14 +99,25 @@ public void launchBrowser(String browserName)
 	 soft.assertAll();
 	}
 	
-	@Test
+	@Test 
 	public void openOrder() throws InterruptedException {
 	testId=10111;
-	headerPage.openOrders();;
+	headerPage.openOrders();
 		
 	 String orderPageURL=driver.getCurrentUrl();
 	 soft.assertEquals(orderPageURL, "https://trade.angelbroking.com/trade/trading/orderbook");
 		 
+	soft.assertAll();
+	}
+	
+	@Test 
+	public void open() throws InterruptedException {
+	testId=10111;
+	headerPage.openOrders();
+		
+	 String orderPageURL=driver.getCurrentUrl();
+	 soft.assertEquals(orderPageURL, "https://trade.angelbroking.com/trade/trading/orderbook");
+		 Assert.fail();
 	soft.assertAll();
 	}
 	
