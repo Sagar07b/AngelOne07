@@ -24,14 +24,14 @@ private WebDriver driver;
 		
 		TakesScreenshot take=(TakesScreenshot)driver;
 		File src=take.getScreenshotAs(OutputType.FILE);
-		File dest=new File("D:\\Software Testing\\Screenshot\\Test"+testId+" " +dm+".jpg");
+		File dest=new File("test-output\\Fail Test Screenshots"+testId+" " +dm+".jpg");
 		FileHandler.copy(src, dest);
 		
 	}
 	
 	public static String excelSheet(String sheet,int Row,int Cell) throws EncryptedDocumentException, IOException {
 		
-		String path =("C:\\Users\\ADMIN\\Desktop\\Test.xlsx");
+		String path =("src\\test\\resources\\Data Sheets\\Data Sheet.xlsx");
 		FileInputStream file=new FileInputStream(path);
 		
 		Cell cell =WorkbookFactory.create(file).getSheet(sheet).getRow(Row).getCell(Cell);

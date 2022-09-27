@@ -97,7 +97,7 @@ public void launchBrowser(String browserName)
 	 soft.assertAll();
 	}
 	
-	@Test
+	@Test 
 	public void openOrder() throws InterruptedException {
 	testId=10111;
 	headerPage.openOrders();;

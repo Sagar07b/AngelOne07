@@ -97,10 +97,10 @@ public class BuyShare1 extends Base {
 			driver.get("https://trade.angelbroking.com/Login");
 			  
 			
-	  String data= Utility.excelSheet("Velocity", 12, 0);
+	  String data= Utility.excelSheet("TestData", 12, 0);
 		loginPage.sendUserName(data);
 		 
-	 String data1= Utility.excelSheet("Velocity", 13, 0);
+	 String data1= Utility.excelSheet("TestData", 13, 0);
 		loginPage.sendPassword(data1);
 		loginPage.clickOnSignINButton();
 		 

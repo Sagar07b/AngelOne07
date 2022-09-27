@@ -10,38 +10,33 @@ public class Base {
 
 	
 	public static WebDriver openChromeDriver() {
-		System.setProperty("webdriver.chrome.driver", "D:\\Software Testing\\Automation notes\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\Browsers\\chromedriver.exe");
 		
 		   WebDriver driver = new ChromeDriver();
 		   return driver;
 	}
 	
-// 	public static WebDriver openFirefoxBrowser() {
-// 		System.setProperty("webdriver.gecko.driver", "D:\\Software Testing\\Automation notes\\Selenium\\geckodriver-v0.31.0-win64\\geckodriver.exe");
+  	public static WebDriver openFirefoxBrowser() {
+  		System.setProperty("webdriver.gecko.driver", "src\\\\test\\\\resources\\\\Browsers\\geckodriver.exe");
  		
-// 	   WebDriver  driver = new FirefoxDriver();
-// 	     return driver;
-	}
+  	   WebDriver  driver = new FirefoxDriver();
+  	     return driver;
+ 	}
 	
 	public static WebDriver openMicrosoftEdgexBrowser() {
-		System.setProperty("webdriver.edge.driver","D:\\Software Testing\\Automation notes\\Selenium\\edgedriver_win64\\msedgedriver.exe");
+		System.setProperty("webdriver.edge.driver","src\\\\test\\\\resources\\\\Browsers\\msedgedriver.exe");
 
 			WebDriver driver = new EdgeDriver  ();
 		        return driver;
 	}
 	
+	 
 	public static WebDriver openOperaBrowser() {
-		System.setProperty("webdriver.opera.driver","D:\\Software Testing\\Automation notes\\Selenium\\operadriver_win64\\operadriver_win64\\operadriver.exe");
+		System.setProperty("webdriver.opera.driver","src\\\\test\\\\resources\\\\Browsers\\operadriver.exe");
 
 		WebDriver driver = new OperaDriver();
         return driver;
-	}	
-//	public static WebDriver openOperaBrowser() {
-//		System.setProperty("webdriver.opera.driver","D:\\Software Testing\\Automation notes\\Selenium\\operadriver_win64\\operadriver_win64\\operadriver.exe");
-//
-//		WebDriver driver = new OperaDriver();
-//        return driver;
-//  }	
+  }	
 	 
 	 
 }
