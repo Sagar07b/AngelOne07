@@ -100,7 +100,7 @@ public void launchBrowser(String browserName)
 	@Test 
 	public void openOrder() throws InterruptedException {
 	testId=10111;
-	headerPage.openOrders();;
+	headerPage.openOrders();
 		
 	 String orderPageURL=driver.getCurrentUrl();
 	 soft.assertEquals(orderPageURL, "https://trade.angelbroking.com/trade/trading/orderbook");
