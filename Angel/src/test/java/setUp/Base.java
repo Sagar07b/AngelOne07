@@ -17,14 +17,14 @@ public class Base {
 	}
 	
   	public static WebDriver openFirefoxBrowser() {
-  		System.setProperty("webdriver.gecko.driver", "src\\\\test\\\\resources\\\\Browsers\\geckodriver.exe");
+  		System.setProperty("webdriver.gecko.driver", "src\\test\\resources\\Browsers\\geckodriver.exe");
  		
   	   WebDriver  driver = new FirefoxDriver();
   	     return driver;
  	}
 	
 	public static WebDriver openMicrosoftEdgexBrowser() {
-		System.setProperty("webdriver.edge.driver","src\\\\test\\\\resources\\\\Browsers\\msedgedriver.exe");
+		System.setProperty("webdriver.edge.driver","src\\test\\resources\\\\Browsers\\msedgedriver.exe");
 
 			WebDriver driver = new EdgeDriver  ();
 		        return driver;
@@ -32,7 +32,7 @@ public class Base {
 	
 	 
 	public static WebDriver openOperaBrowser() {
-		System.setProperty("webdriver.opera.driver","src\\\\test\\\\resources\\\\Browsers\\operadriver.exe");
+		System.setProperty("webdriver.opera.driver","src\\test\\resources\\Browsers\\operadriver.exe");
 
 		WebDriver driver = new OperaDriver();
         return driver;
